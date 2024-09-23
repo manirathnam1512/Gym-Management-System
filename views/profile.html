@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Your Profile</title>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Gym Management System</h1>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="/">Home</a>
+            <a href="/register">Register</a>
+            <a href="/login">Login</a>
+            <a href="/dashboard">Dashboard</a>
+        </div>
+    </nav>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+        <h2>Your Profile</h2>
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <button onclick="window.location.href='/'">Logout</button>
+    </div>
+
+    <!-- Fetch user data from server -->
+    <script>
+        fetch('/api/user')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('name').innerText = data.name;
+                document.getElementById('email').innerText = data.email;
+            })
+            .catch(error => {
+                console.error('Error fetching user data:', error);
+                window.location.href = '/login';
+            });
+    </script>
+</body>
+</html>

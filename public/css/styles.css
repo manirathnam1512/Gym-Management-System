@@ -1,0 +1,212 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navigation */
+nav {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #e8491d;
+}
+
+/* Forms */
+form {
+    background: #ffffff;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #35424a;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+form button:hover {
+    background: #e8491d;
+    cursor: pointer;
+}
+
+/* Profile Card */
+.profile-card {
+    background: #ffffff;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-card h2 {
+    color: #35424a;
+    margin-bottom: 20px;
+}
+
+.profile-card p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Add to styles.css */
+
+/* Buttons */
+button {
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #e8491d;
+    transform: scale(1.05);
+}
+
+/* Navigation Links */
+nav a {
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e8491d;
+}
+
+/* Add to styles.css */
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background: #35424a;
+    color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Add to styles.css */
+
+/* Header Background */
+header {
+    background: url('/images/gym-header.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    background: rgba(53, 66, 74, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    form, .profile-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
