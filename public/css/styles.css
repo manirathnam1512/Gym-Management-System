@@ -1,6 +1,3 @@
-/* styles.css */
-
-/* Global Styles */
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f9f9f9;
@@ -14,7 +11,7 @@ body {
     overflow: hidden;
 }
 
-/* Header */
+
 header {
     background: #35424a;
     color: #ffffff;
@@ -29,7 +26,7 @@ header h1 {
     font-size: 36px;
 }
 
-/* Navigation */
+
 nav {
     background: #35424a;
     color: #ffffff;
@@ -49,7 +46,7 @@ nav a:hover {
     color: #e8491d;
 }
 
-/* Forms */
+
 form {
     background: #ffffff;
     padding: 40px;
@@ -89,7 +86,7 @@ form button:hover {
     cursor: pointer;
 }
 
-/* Profile Card */
+
 .profile-card {
     background: #ffffff;
     padding: 30px;
@@ -110,7 +107,7 @@ form button:hover {
     margin: 10px 0;
 }
 
-/* Footer */
+
 footer {
     background: #35424a;
     color: #ffffff;
@@ -123,9 +120,7 @@ footer p {
     margin: 0;
 }
 
-/* Add to styles.css */
 
-/* Buttons */
 button {
     transition: background 0.3s, transform 0.3s;
 }
@@ -135,7 +130,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Navigation Links */
+
 nav a {
     transition: color 0.3s;
 }
@@ -144,9 +139,7 @@ nav a:hover {
     color: #e8491d;
 }
 
-/* Add to styles.css */
 
-/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -168,9 +161,7 @@ table tr:nth-child(even) {
     background: #f2f2f2;
 }
 
-/* Add to styles.css */
 
-/* Header Background */
 header {
     background: url('/images/gym-header.jpg') no-repeat center center/cover;
     position: relative;
@@ -193,7 +184,7 @@ header h1 {
 
 
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 28px;

@@ -5,9 +5,7 @@ const session = require('express-session');
 const app = express();
 const port = 3000;
 
-// Add an admin user manually (skip this step if using the UI):
 
-// Database setup
 let db = new sqlite3.Database('./database.db', (err) => {
     if (err) {
         console.error(err.message);
@@ -23,11 +21,11 @@ let db = new sqlite3.Database('./database.db', (err) => {
         }
     });
     
-// Middleware
+
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Session setup
+
 app.use(session({
     secret: '12345', // Secret for signing the session ID
     resave: false,
